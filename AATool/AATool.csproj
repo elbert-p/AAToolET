@@ -280,6 +280,7 @@
     <Compile Include="UI\Controls\UIRecordsAllBlocks.cs" />
     <Compile Include="UI\Controls\UIRunnerProfile.cs" />
     <Compile Include="UI\Controls\UISlider.cs" />
+    <Compile Include="UI\Controls\UIStatusBarPoints.cs" />
     <Compile Include="UI\Controls\UIStrongholdMap.cs" />
     <Compile Include="UI\Controls\UIRunOverview.cs" />
     <Compile Include="UI\Controls\UISupporterAvatar.cs" />
@@ -7658,6 +7659,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="assets\templates\control_runner_profile.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\templates\control_status_bar_points.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="assets\templates\control_supporter_avatar.xml">

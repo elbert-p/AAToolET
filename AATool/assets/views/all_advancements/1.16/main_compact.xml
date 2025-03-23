@@ -48,6 +48,6 @@
         </flow_panel>
 
         <!-- status strip -->
-        <status_bar row="2" col="1" colspan="3" right="456"/>
-    </grid>
+       <status_bar_points row="2" col="1" colspan="3" right="456"/>
+	</grid>
 </control>

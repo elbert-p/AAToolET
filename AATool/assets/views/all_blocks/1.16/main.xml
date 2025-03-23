@@ -358,7 +358,7 @@
         </flow_panel>
 
         <!-- status strip -->
-        <status_bar row="2" col="1" colspan="4" right="456"/>
+        <status_bar_points row="2" col="1" colspan="4" right="456"/>
 
         <!-- block hover tooltip -->
         <block_popup row="1" col="2"/>

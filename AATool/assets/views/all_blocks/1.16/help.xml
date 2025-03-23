@@ -563,6 +563,6 @@
         <leaderboard category="All Blocks" version="1.16" draw_mode="none"/>
 
         <!-- status strip -->
-        <status_bar row="2" col="1" colspan="3" right="456"/>
+        <status_bar_points row="2" col="1" colspan="3" right="456"/>
     </grid>
 </screen>
