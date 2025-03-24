@@ -219,8 +219,7 @@ namespace AATool.UI.Controls
             //this.striderGlow.SetTint(Canvas.RainbowFast);
 
             // Example data:
-            int pointsCurrent = 10+5+12+7;   // The “x” in "Points: x/total"
-            int pointsTotal   = 100;  // The total
+
             int biomesCurrent = 10;
             int biomesTotal   = 36;
             int exploringCurrent = 5;
@@ -229,9 +228,11 @@ namespace AATool.UI.Controls
             int mobsTotal   = 23;
             int miscCurrent = 7;
             int miscTotal   = 17;
+            int pointsCurrent = biomesCurrent + exploringCurrent + mobsCurrent + miscCurrent;
+            int pointsTotal   = biomesTotal + exploringTotal + mobsTotal + miscTotal;
 
             // update text
-            string labelText = $"Points: {pointsCurrent}/{pointsTotal} " +
+            string labelText = $"Points: {pointsCurrent}/{pointsTotal} - " +
                                 $"Biomes: {biomesCurrent}/{biomesTotal}, " +
                                 $"Exploring: {exploringCurrent}/{exploringTotal}, " +
                                 $"Mobs: {mobsCurrent}/{mobsTotal}, " +

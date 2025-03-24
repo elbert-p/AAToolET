@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<control>
+	<!-- points -->
+	<panel width="400" padding_right ="10" height="45" horizontal_align="right" vertical_align="top" draw_mode="children_only">
+		<text_block width="0.85*" vertical_align="top" margin_top="2"/>
+		<progress_bar vertical_align="top" horizontal_align="right" margin="10,10,28,0"/>
+	</panel>
+	
+</control>
+
+<!--            
+	<panel name="points_panel" width="0.45*" height="45" horizontal_align="right" vertical_align="top"  margin="16,16,8,0" draw_mode="children_only">
+	</panel>
+l, r, t, 
+<columns>
+                <column width="0.3333*"/>
+                <column width="0.3333*"/>
+                <column width="0.3333*"/>
+            </columns>
+			
+			 margin="10,10,4,0"
+			 
+			 
+		<text_block width="230" height="45" vertical_align="top" horizontal_align="right" margin="0,0.14*,8,0" />
+		<progress_bar width="0.14*" height="45" vertical_align="top" horizontal_align="right" margin="16,16,16,0"/>
+		
+			<panel padding_right ="168" horizontal_align="right" vertical_align="top" draw_mode="children_only">
+		<text_block width="330" height="45" vertical_align="top" horizontal_align="right" margin_top="8" />
+	</panel>
+	
+	<progress_bar width="168" height="45" vertical_align="top" horizontal_align="right" margin="16,16,16,0"/>
+			-->

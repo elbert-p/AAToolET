@@ -173,6 +173,7 @@ namespace AATool.UI.Screens
             this.lastRefresh.SetVisibility(Config.Overlay.ShowLastRefresh);
             this.AddControl(this.lastRefresh);
 
+
             //initialize main objective carousel
             this.advancements = this.First<UICarousel>("advancements");
             this.advancements?.SetScrollDirection(Config.Overlay.RightToLeft);

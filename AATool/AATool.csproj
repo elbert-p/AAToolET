@@ -270,6 +270,7 @@
     <Compile Include="UI\Controls\UIPersonalBestHardcoreChallenge.cs" />
     <Compile Include="UI\Controls\UIPinnedObjectiveFrame.cs" />
     <Compile Include="UI\Controls\UIPinnedRow.cs" />
+    <Compile Include="UI\Controls\UIPointsBar.cs" />
     <Compile Include="UI\Controls\UIRecordHolder.cs" />
     <Compile Include="UI\Controls\UIRecordHolderHalfHeartHardcore.cs" />
     <Compile Include="UI\Controls\UIRecordHolderMostAnyPercent.cs" />
@@ -7632,6 +7633,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="assets\templates\control_hundred_thousand_grid.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\templates\control_points_bar.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="assets\templates\control_record_holder_speedrun_dot_com.xml">

@@ -4,7 +4,10 @@
         <!-- run completion stats -->
         <run_complete/>
     </panel>
-    <panel name="panel_carousel" draw_mode="children_only" collapsed="true">
+	
+	<points_bar draw_mode="children_only"/>
+	
+	<panel name="panel_carousel" draw_mode="children_only" collapsed="true">
         <!-- criteria carousel -->
         <criteria_carousel name="criteria"/>
 
@@ -13,5 +16,5 @@
 
         <!-- pinned objectives -->
         <pinned_row/>
-    </panel>  
+    </panel>
 </control>
