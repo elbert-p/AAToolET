@@ -50,6 +50,7 @@ namespace AATool.UI.Screens
         private UIObjectiveTray tray;
         private UIControl runCompletePanel;
         private UIControl carouselPanel;
+        private UIPanel pointsBar;
         private bool isResizing;
         private Color frameBackColor;
         private Color frameBorderColor;
@@ -157,6 +158,12 @@ namespace AATool.UI.Screens
         {
             this.runCompletePanel = this.First("panel_congrats");
             this.carouselPanel = this.First("panel_carousel");
+            this.pointsBar = this.First<UIPanel>("points_bar");
+
+            this.pointsBar?.SetVisibility(Config.Overlay.ShowPointsBar 
+                && Tracker.Category.Name == "All Advancements"
+                && Tracker.Category.CurrentVersion == "1.16");
+            this.AddControl(this.pointsBar);
 
             this.text = new UITextBlock("minecraft", 24) {
                 FlexHeight = new (42),

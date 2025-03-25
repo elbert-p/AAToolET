@@ -5,7 +5,7 @@
         <run_complete/>
     </panel>
 	
-	<points_bar draw_mode="children_only"/>
+	<points_bar name = "points_bar" draw_mode="children_only" collapsed ="true"/>
 	
 	<panel name="panel_carousel" draw_mode="children_only" collapsed="true">
         <!-- criteria carousel -->

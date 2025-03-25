@@ -13,6 +13,8 @@ namespace AATool.UI.Controls
     class UIPointsBar : UIPanel
     {
         private const string Rocket = "minecraft:firework_rocket";
+        private const string Poison = "minecraft:poisonous_potato";
+
         private const string Tnt = "minecraft:tnt";
         private const string Obsidian = "minecraft:obsidian";
         private const string Pearl = "minecraft:ender_pearl";
@@ -35,11 +37,10 @@ namespace AATool.UI.Controls
         private UIPicture tearAndCrystal;
 
         //points panel
-        private UIControl pointsPanel;
+        private UITextBlock estimatedTime;
+        //private UIControl pointsPanel;
         private UITextBlock pointsLabel;
         private UIProgressBar pointsBar;
-
-        private bool initialized = false;
 
         public UIPointsBar()
         {
@@ -63,7 +64,9 @@ namespace AATool.UI.Controls
 
             //points panel
             //this.pointsPanel = this.First("points_panel");
-            this.pointsLabel = this.First<UITextBlock>();
+            this.estimatedTime = this.First<UITextBlock>("estimated_time");
+            this.estimatedTime.SetFont("minecraft", 24);
+            this.pointsLabel = this.First<UITextBlock>("bar_label");
             this.pointsLabel.SetFont("minecraft", 24);
             this.pointsBar = this.First<UIProgressBar>();
             this.pointsBar.SetMin(0);
@@ -104,6 +107,8 @@ namespace AATool.UI.Controls
         private void UpdateCounts()
         {
             //    progress += $"    -    {Tracker.GetFullIgt()} IGT";
+            //string timeText = $"- 2:24:34";
+            //this.estimatedTime.SetText(timeText);
 
             // Example data:
             int biomesCurrent = 10;
@@ -118,7 +123,7 @@ namespace AATool.UI.Controls
             int pointsTotal   = biomesTotal + exploringTotal + mobsTotal + miscTotal;
 
             // update text
-            string labelText = $"Midgame progress: {pointsCurrent}/{pointsTotal}";
+            string labelText = $"Est. Progress: {100}/{pointsTotal}";
             this.pointsLabel.SetText(labelText);
 
             // update the bar progress (0 to 1)
@@ -184,6 +189,8 @@ namespace AATool.UI.Controls
 
                 this.tearAndCrystal?.SetTexture("tear_and_crystal");
                 this.tears?.SetText($"{Math.Max(0, tearCount)}/4");
+
+
             }
 
             //ender pearls
@@ -191,6 +198,11 @@ namespace AATool.UI.Controls
                 - Tracker.State.TimesUsed(Pearl)
                 - Tracker.State.TimesDropped(Pearl);
             this.pearls?.SetText(Math.Max(0, pearlCount).ToString());
+
+            int poisonCount = Tracker.State.TimesUsed(Poison);
+
+            string timeText = $"{poisonCount}";
+            this.estimatedTime.SetText(timeText);
         }
     }
 }

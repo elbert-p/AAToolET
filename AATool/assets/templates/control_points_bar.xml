@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <control>
 	<!-- points -->
-	<panel width="400" padding_right ="10" height="45" horizontal_align="right" vertical_align="top" draw_mode="children_only">
-		<text_block width="0.85*" vertical_align="top" margin_top="2"/>
+	
+	<text_block name="estimated_time" width="100" horizontal_align="right" vertical_align="top" margin_top="8" padding_right="10"/>
+	<panel width="430" padding_right ="102" height="45" horizontal_align="right" vertical_align="top" draw_mode="children_only">
+		<text_block name="bar_label" width="0.85*" vertical_align="top" margin_top="2"/>
 		<progress_bar vertical_align="top" horizontal_align="right" margin="10,10,28,0"/>
 	</panel>
 	

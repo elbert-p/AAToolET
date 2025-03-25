@@ -17,6 +17,7 @@ namespace AATool.Configuration
             [JsonProperty] public readonly Setting<bool> ShowPickups  = new (true);
             [JsonProperty] public readonly Setting<bool> ShowIgt      = new (false);
             [JsonProperty] public readonly Setting<bool> ShowLastRefresh = new (true);
+            [JsonProperty] public readonly Setting<bool> ShowPointsBar = new (true);
             [JsonProperty] public readonly Setting<bool> RightToLeft  = new (false);
             [JsonProperty] public readonly Setting<bool> PickupsOpposite  = new (false);
             [JsonProperty] public readonly Setting<bool> LastRefreshOpposite  = new (false);
@@ -51,6 +52,7 @@ namespace AATool.Configuration
                 || this.RightToLeft.Changed
                 || this.PickupsOpposite.Changed
                 || this.ShowLastRefresh.Changed
+                || this.ShowPointsBar.Changed
                 || this.LastRefreshOpposite.Changed;
 
             protected override string GetId() => "overlay";
@@ -69,6 +71,7 @@ namespace AATool.Configuration
                 this.RegisterSetting(this.ShowCriteria);
                 this.RegisterSetting(this.ShowPickups);
                 this.RegisterSetting(this.ShowLastRefresh);
+                this.RegisterSetting(this.ShowPointsBar);
 
                 this.RegisterSetting(this.RightToLeft);
                 this.RegisterSetting(this.PickupsOpposite);
